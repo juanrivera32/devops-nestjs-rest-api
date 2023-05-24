@@ -13,7 +13,7 @@ import { ProductDto, ProductIdDto, ProductRespDto, ProductUpdateDto } from './dt
 import { ProductsService } from './products.service';
 import { SkipAuth } from '../../guards/skip-auth.decorator';
 
-@Controller('products')
+@Controller('/api/products')
 export class ProductsController {
   constructor(private productsService: ProductsService) {}
 
